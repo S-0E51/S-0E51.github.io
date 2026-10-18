@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>{profile.name} — Professional Portfolio</title>
+	<title>{profile.name}</title>
 	<meta
 		name="description"
 		content={`${profile.name}. ${profile.introduction} Explore selected projects and professional background.`}
@@ -40,7 +40,7 @@
 		<div class="hero-copy">
 			<p class="eyebrow">
 				<span class="small-square" aria-hidden="true"></span>
-				Professional portfolio
+				Portfolio
 			</p>
 			<div class="hero-identity">
 				<img
@@ -196,7 +196,7 @@
 			<div class="wrap contact-content">
 				<div>
 					<p class="eyebrow">05 / Keep in touch</p>
-					<h2 id="contact-title">Start with<br />a conversation.</h2>
+					<h2 id="contact-title">How to reach me</h2>
 					<p>
 						For professional opportunities,<br />get in touch by email or connect on LinkedIn.
 					</p>
@@ -249,7 +249,7 @@
 </main>
 
 <footer class="site-footer wrap">
-	<span>{profile.name} / Professional portfolio</span>
+	<span>{profile.name} / Portfolio</span>
 	<a class="label-link" href="#main">
 		<span class="link-label">Back to top</span>
 	</a>
