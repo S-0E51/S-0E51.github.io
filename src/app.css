@@ -336,7 +336,7 @@ h2 {
 	font-weight: 650;
 	white-space: pre-line;
 	align-self: flex-start;
-	padding-bottom: 10px;
+	padding-bottom: 7.5px;
 	border-bottom: 2px dotted var(--decoration);
 }
 .project-copy {
