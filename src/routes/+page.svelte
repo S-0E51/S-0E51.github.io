@@ -24,8 +24,14 @@
 
 <header class="site-header wrap">
 	<a class="brand" href="#main" aria-label={`${profile.name}, back to top`}>
-		<span class="brand-mark" aria-hidden="true">{profile.initials}</span>
-		<span>{profile.name}</span>
+		<img
+			class="brand-photo"
+			src={asset('images/profile.jpg')}
+			alt=""
+			width="80"
+			height="80"
+			decoding="async"
+		/>
 	</a>
 	<nav aria-label="Main navigation">
 		<a href="#projects">Projects</a>
