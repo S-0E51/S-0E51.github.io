@@ -22,23 +22,16 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header wrap">
-	<a class="brand" href="#main" aria-label={`${profile.name}, back to top`}>
-		<img
-			class="brand-photo"
-			src={asset('images/profile.jpg')}
-			alt=""
-			width="80"
-			height="80"
-			decoding="async"
-		/>
-	</a>
-	<nav aria-label="Main navigation">
+<header class="site-header">
+	<nav class="site-nav wrap" aria-label="Main navigation">
+		<a href="#main">Home</a>
 		<a href="#projects">Projects</a>
 		<a href="#technologies">Technologies</a>
 		<a href="#resume">Resume</a>
 		<a href="#about">About</a>
-		<a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+		<a class="arrow-link" href="#contact">
+			<span class="link-label">Contact <span aria-hidden="true">↗</span></span>
+		</a>
 	</nav>
 </header>
 
@@ -49,7 +42,17 @@
 				<span class="small-square" aria-hidden="true"></span>
 				Professional portfolio
 			</p>
-			<h1 id="hero-title">{profile.name}</h1>
+			<div class="hero-identity">
+				<img
+					class="hero-photo"
+					src={asset('images/profile.jpg')}
+					alt=""
+					width="112"
+					height="112"
+					decoding="async"
+				/>
+				<h1 id="hero-title">{profile.name}</h1>
+			</div>
 			<p class="hero-introduction">{profile.introduction}</p>
 			<div class="hero-actions">
 				<a class="button button-primary" href="#projects"
@@ -60,11 +63,15 @@
 				>
 			</div>
 			<div class="hero-profile-links" aria-label="Contact and professional profiles">
-				<a href={`mailto:${profile.email}`} rel="external"
-					>Email me <span aria-hidden="true">↗</span></a
-				>
-				<a href={profile.githubUrl} rel="external">GitHub <span aria-hidden="true">↗</span></a>
-				<a href={profile.linkedinUrl} rel="external">LinkedIn <span aria-hidden="true">↗</span></a>
+				<a class="arrow-link" href={`mailto:${profile.email}`} rel="external">
+					<span class="link-label">Email me <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="arrow-link" href={profile.githubUrl} rel="external">
+					<span class="link-label">GitHub <span aria-hidden="true">↗</span></span>
+				</a>
+				<a class="arrow-link" href={profile.linkedinUrl} rel="external">
+					<span class="link-label">LinkedIn <span aria-hidden="true">↗</span></span>
+				</a>
 			</div>
 		</div>
 		<aside class="hero-summary" aria-labelledby="summary-title">
@@ -120,9 +127,9 @@
 			<p class="eyebrow">03 / Professional background</p>
 			<h2 id="resume-title">Education &<br />experience.</h2>
 			{#if profile.resumePath}
-				<a class="text-link" href={asset(profile.resumePath)} download
-					>Download resume <span aria-hidden="true">↓</span></a
-				>
+				<a class="text-link arrow-link" href={asset(profile.resumePath)} download>
+					<span class="link-label">Download resume <span aria-hidden="true">↓</span></span>
+				</a>
 			{/if}
 		</div>
 		<div class="resume-details">
@@ -161,9 +168,9 @@
 					{#each training as entry (entry.title)}
 						<li>
 							<h4>
-								<a href={entry.sourceUrl} rel="external"
-									>{entry.title} <span aria-hidden="true">↗</span></a
-								>
+								<a class="arrow-link" href={entry.sourceUrl} rel="external">
+									<span class="link-label">{entry.title} <span aria-hidden="true">↗</span></span>
+								</a>
 							</h4>
 							<p class="background-employer">{entry.provider}</p>
 							<p class="background-period">{entry.date}</p>
@@ -192,7 +199,7 @@
 		<div class="wrap about-grid">
 			<div>
 				<p class="eyebrow">04 / About</p>
-				<h2 id="about-title">The person<br />behind the projects.</h2>
+				<h2 id="about-title">A quick about me</h2>
 			</div>
 			<div class="about-copy">
 				<p class="about-lead">Hello, I'm {profile.name}.</p>
@@ -215,21 +222,25 @@
 				</div>
 				<ul class="contact-links" aria-label="Contact options">
 					<li>
-						<a href={`mailto:${profile.email}`} rel="external">
-							<span class="contact-method">Email</span>
-							<span class="contact-value">{profile.email} <span aria-hidden="true">↗</span></span>
+						<a class="arrow-link" href={`mailto:${profile.email}`} rel="external">
+							<span class="contact-method link-label">Email</span>
+							<span class="contact-value link-label"
+								>{profile.email} <span aria-hidden="true">↗</span></span
+							>
 						</a>
 					</li>
 					<li>
-						<a href={profile.linkedinUrl} rel="external">
-							<span class="contact-method">LinkedIn</span>
-							<span class="contact-value">View my profile <span aria-hidden="true">↗</span></span>
+						<a class="arrow-link" href={profile.linkedinUrl} rel="external">
+							<span class="contact-method link-label">LinkedIn</span>
+							<span class="contact-value link-label"
+								>View my profile <span aria-hidden="true">↗</span></span
+							>
 						</a>
 					</li>
 					<li>
-						<a href={profile.githubUrl} rel="external">
-							<span class="contact-method">GitHub</span>
-							<span class="contact-value"
+						<a class="arrow-link" href={profile.githubUrl} rel="external">
+							<span class="contact-method link-label">GitHub</span>
+							<span class="contact-value link-label"
 								>Explore my repositories <span aria-hidden="true">↗</span></span
 							>
 						</a>
@@ -241,7 +252,8 @@
 </main>
 
 <footer class="site-footer wrap">
-	<span>{profile.name} / Professional portfolio</span><a href="#main"
-		>Back to top <span aria-hidden="true">↑</span></a
-	>
+	<span>{profile.name} / Professional portfolio</span>
+	<a class="arrow-link" href="#main">
+		<span class="link-label">Back to top <span aria-hidden="true">↑</span></span>
+	</a>
 </footer>

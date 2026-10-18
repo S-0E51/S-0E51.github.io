@@ -31,8 +31,8 @@
 			{/each}
 		</div>
 		{#if project.repositoryUrl}
-			<a class="text-link" href={project.repositoryUrl} rel="external">
-				<span class="repository-label">Explore repository <span aria-hidden="true">↗</span></span>
+			<a class="text-link arrow-link" href={project.repositoryUrl} rel="external">
+				<span class="link-label">Explore repository <span aria-hidden="true">↗</span></span>
 			</a>
 		{:else}
 			<p class="repository-pending">Repository pending</p>

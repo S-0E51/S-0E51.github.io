@@ -60,8 +60,9 @@ export const profile = {
 	introduction:
 		'A computer science graduate with a minor in cybersecurity, exploring opportunities in full-stack development, data science and analysis, and IT.',
 	about: [
-		"I'm curious about how technology works and what I can build with it. My background in computer science and cybersecurity gives me a foundation to explore software development, data, and IT.",
-		'I enjoy turning ideas into projects, trying new technologies, and learning through hands-on experimentation. My projects and exploration include AI agents, automation, natural language processing (NLP), and computer vision, including optical character recognition (OCR).'
+		"I'm curious about how technology works and what I can build with it. My background in computer science and cybersecurity gives me a foundation in software development, data, and IT.",
+		'I enjoy turning ideas into projects and learning through hands-on experimentation. My work has involved AI agents, automation, natural language processing (NLP), and computer vision, including optical character recognition (OCR).',
+		'In my free time, I like tinkering with tools and building small projects that make everyday tasks easier. I also enjoy gaming, drawing, and learning about Japanese culture and language.'
 	],
 	careerInterests: [
 		'Full-stack development',
