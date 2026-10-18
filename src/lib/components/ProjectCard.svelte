@@ -32,8 +32,7 @@
 		</div>
 		{#if project.repositoryUrl}
 			<a class="text-link" href={project.repositoryUrl} rel="external">
-				<span class="repository-label">Explore repository</span>
-				<span aria-hidden="true">↗</span>
+				<span class="repository-label">Explore repository <span aria-hidden="true">↗</span></span>
 			</a>
 		{:else}
 			<p class="repository-pending">Repository pending</p>
