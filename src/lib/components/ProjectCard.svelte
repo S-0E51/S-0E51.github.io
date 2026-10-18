@@ -8,7 +8,7 @@
 		<div class="art-topline"><span>{project.category}</span><span>{project.status}</span></div>
 		<div class="art-title">{project.coverTitle}</div>
 		<div class="art-bottomline">
-			<span>{project.title}</span>{#if project.repositoryUrl}<span>↗</span>{/if}
+			<span>{project.title}</span>
 		</div>
 	</div>
 	<div class="project-copy">
@@ -31,8 +31,8 @@
 			{/each}
 		</div>
 		{#if project.repositoryUrl}
-			<a class="text-link arrow-link" href={project.repositoryUrl} rel="external">
-				<span class="link-label">Explore repository <span aria-hidden="true">↗</span></span>
+			<a class="text-link label-link" href={project.repositoryUrl} rel="external">
+				<span class="link-label">Explore repository</span>
 			</a>
 		{:else}
 			<p class="repository-pending">Repository pending</p>

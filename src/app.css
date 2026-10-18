@@ -40,16 +40,21 @@ a:hover {
 	text-decoration: underline;
 	text-underline-offset: 0.3em;
 }
-.arrow-link:hover,
-.arrow-link:focus-visible {
+.label-link:hover,
+.label-link:focus-visible {
 	text-decoration: none;
 }
-.arrow-link:hover .link-label,
-.arrow-link:focus-visible .link-label {
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.3em;
-	text-decoration-skip-ink: none;
+.link-label {
+	padding-bottom: 0.15em;
+	background-size: 100% 1px;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+.label-link:hover .link-label,
+.label-link:focus-visible .link-label {
+	background-image: linear-gradient(currentColor, currentColor);
 }
 a:focus-visible,
 [tabindex]:focus-visible {
@@ -181,13 +186,11 @@ h1 {
 }
 .hero-actions .button {
 	padding: 16px 18px;
-	gap: 16px;
 }
 .button {
 	padding: 17px 23px;
 	display: inline-flex;
-	justify-content: space-between;
-	gap: 30px;
+	justify-content: center;
 	align-items: center;
 	font-size: 13px;
 	font-weight: 600;

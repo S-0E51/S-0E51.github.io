@@ -29,8 +29,8 @@
 		<a href="#technologies">Technologies</a>
 		<a href="#resume">Resume</a>
 		<a href="#about">About</a>
-		<a class="arrow-link" href="#contact">
-			<span class="link-label">Contact <span aria-hidden="true">↗</span></span>
+		<a class="label-link" href="#contact">
+			<span class="link-label">Contact</span>
 		</a>
 	</nav>
 </header>
@@ -55,22 +55,18 @@
 			</div>
 			<p class="hero-introduction">{profile.introduction}</p>
 			<div class="hero-actions">
-				<a class="button button-primary" href="#projects"
-					>View projects <span aria-hidden="true">↓</span></a
-				>
-				<a class="button button-secondary" href="#resume"
-					>View resume <span aria-hidden="true">↓</span></a
-				>
+				<a class="button button-primary" href="#projects">View projects</a>
+				<a class="button button-secondary" href="#resume">View resume</a>
 			</div>
 			<div class="hero-profile-links" aria-label="Contact and professional profiles">
-				<a class="arrow-link" href={`mailto:${profile.email}`} rel="external">
-					<span class="link-label">Email me <span aria-hidden="true">↗</span></span>
+				<a class="label-link" href={`mailto:${profile.email}`} rel="external">
+					<span class="link-label">Email me</span>
 				</a>
-				<a class="arrow-link" href={profile.githubUrl} rel="external">
-					<span class="link-label">GitHub <span aria-hidden="true">↗</span></span>
+				<a class="label-link" href={profile.githubUrl} rel="external">
+					<span class="link-label">GitHub</span>
 				</a>
-				<a class="arrow-link" href={profile.linkedinUrl} rel="external">
-					<span class="link-label">LinkedIn <span aria-hidden="true">↗</span></span>
+				<a class="label-link" href={profile.linkedinUrl} rel="external">
+					<span class="link-label">LinkedIn</span>
 				</a>
 			</div>
 		</div>
@@ -127,8 +123,8 @@
 			<p class="eyebrow">03 / Professional background</p>
 			<h2 id="resume-title">Education &<br />experience.</h2>
 			{#if profile.resumePath}
-				<a class="text-link arrow-link" href={asset(profile.resumePath)} download>
-					<span class="link-label">Download resume <span aria-hidden="true">↓</span></span>
+				<a class="text-link label-link" href={asset(profile.resumePath)} download>
+					<span class="link-label">Download resume</span>
 				</a>
 			{/if}
 		</div>
@@ -168,8 +164,8 @@
 					{#each training as entry (entry.title)}
 						<li>
 							<h4>
-								<a class="arrow-link" href={entry.sourceUrl} rel="external">
-									<span class="link-label">{entry.title} <span aria-hidden="true">↗</span></span>
+								<a class="label-link" href={entry.sourceUrl} rel="external">
+									<span class="link-label">{entry.title}</span>
 								</a>
 							</h4>
 							<p class="background-employer">{entry.provider}</p>
@@ -222,27 +218,21 @@
 				</div>
 				<ul class="contact-links" aria-label="Contact options">
 					<li>
-						<a class="arrow-link" href={`mailto:${profile.email}`} rel="external">
+						<a class="label-link" href={`mailto:${profile.email}`} rel="external">
 							<span class="contact-method link-label">Email</span>
-							<span class="contact-value link-label"
-								>{profile.email} <span aria-hidden="true">↗</span></span
-							>
+							<span class="contact-value link-label">{profile.email}</span>
 						</a>
 					</li>
 					<li>
-						<a class="arrow-link" href={profile.linkedinUrl} rel="external">
+						<a class="label-link" href={profile.linkedinUrl} rel="external">
 							<span class="contact-method link-label">LinkedIn</span>
-							<span class="contact-value link-label"
-								>View my profile <span aria-hidden="true">↗</span></span
-							>
+							<span class="contact-value link-label">View my profile</span>
 						</a>
 					</li>
 					<li>
-						<a class="arrow-link" href={profile.githubUrl} rel="external">
+						<a class="label-link" href={profile.githubUrl} rel="external">
 							<span class="contact-method link-label">GitHub</span>
-							<span class="contact-value link-label"
-								>Explore my repositories <span aria-hidden="true">↗</span></span
-							>
+							<span class="contact-value link-label">Explore my repositories</span>
 						</a>
 					</li>
 				</ul>
@@ -253,7 +243,7 @@
 
 <footer class="site-footer wrap">
 	<span>{profile.name} / Professional portfolio</span>
-	<a class="arrow-link" href="#main">
-		<span class="link-label">Back to top <span aria-hidden="true">↑</span></span>
+	<a class="label-link" href="#main">
+		<span class="link-label">Back to top</span>
 	</a>
 </footer>
