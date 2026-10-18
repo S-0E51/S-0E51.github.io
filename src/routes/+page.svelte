@@ -218,20 +218,30 @@
 				</div>
 				<ul class="contact-links" aria-label="Contact options">
 					<li>
+						<span class="contact-method">Email</span>
 						<a class="label-link" href={`mailto:${profile.email}`} rel="external">
-							<span class="contact-method link-label">Email</span>
 							<span class="contact-value link-label">{profile.email}</span>
 						</a>
 					</li>
 					<li>
-						<a class="label-link" href={profile.linkedinUrl} rel="external">
-							<span class="contact-method link-label">LinkedIn</span>
+						<span class="contact-method">LinkedIn</span>
+						<a
+							class="label-link"
+							href={profile.linkedinUrl}
+							rel="external"
+							aria-label="View my LinkedIn profile"
+						>
 							<span class="contact-value link-label">View my profile</span>
 						</a>
 					</li>
 					<li>
-						<a class="label-link" href={profile.githubUrl} rel="external">
-							<span class="contact-method link-label">GitHub</span>
+						<span class="contact-method">GitHub</span>
+						<a
+							class="label-link"
+							href={profile.githubUrl}
+							rel="external"
+							aria-label="Explore my GitHub repositories"
+						>
 							<span class="contact-value link-label">Explore my repositories</span>
 						</a>
 					</li>

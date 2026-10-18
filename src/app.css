@@ -629,15 +629,19 @@ h3 {
 	width: min(100%, 380px);
 	min-width: 0;
 }
-.contact-links a {
+.contact-links li {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 	gap: 24px;
-	padding-block: 18px;
 	border-bottom: 1px solid var(--on-dark-line);
 }
+.contact-links a {
+	min-width: 0;
+	padding-block: 18px;
+}
 .contact-method {
+	flex-shrink: 0;
 	color: var(--on-dark-muted);
 	font-size: 11px;
 	letter-spacing: 0.08em;
