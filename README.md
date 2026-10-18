@@ -34,7 +34,7 @@ src/
   app.css                  Shared styles and responsive layouts
   app.html                 HTML document template
 static/                    Public assets copied into the site
-docs/                      Project reference and technology evidence
+.github/workflows/         GitHub Pages build and deployment
 vite.config.ts             SvelteKit, static adapter, and deployment base path
 tsconfig.json              TypeScript configuration
 eslint.config.js           Lint rules
