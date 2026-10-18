@@ -54,21 +54,6 @@
 				<h1 id="hero-title">{profile.name}</h1>
 			</div>
 			<p class="hero-introduction">{profile.introduction}</p>
-			<div class="hero-actions">
-				<a class="button button-primary" href="#projects">View projects</a>
-				<a class="button button-secondary" href="#resume">View resume</a>
-			</div>
-			<div class="hero-profile-links" aria-label="Contact and professional profiles">
-				<a class="label-link" href={`mailto:${profile.email}`} rel="external">
-					<span class="link-label">Email me</span>
-				</a>
-				<a class="label-link" href={profile.githubUrl} rel="external">
-					<span class="link-label">GitHub</span>
-				</a>
-				<a class="label-link" href={profile.linkedinUrl} rel="external">
-					<span class="link-label">LinkedIn</span>
-				</a>
-			</div>
 		</div>
 		<aside class="hero-summary" aria-labelledby="summary-title">
 			<p class="eyebrow">At a glance</p>
@@ -218,13 +203,21 @@
 				</div>
 				<ul class="contact-links" aria-label="Contact options">
 					<li>
-						<span class="contact-method">Email</span>
+						<span
+							class="contact-icon"
+							style={`--contact-icon: url('${asset('icons/envelope.svg')}')`}
+							aria-hidden="true"
+						></span>
 						<a class="label-link" href={`mailto:${profile.email}`} rel="external">
 							<span class="contact-value link-label">{profile.email}</span>
 						</a>
 					</li>
 					<li>
-						<span class="contact-method">LinkedIn</span>
+						<span
+							class="contact-icon"
+							style={`--contact-icon: url('${asset('icons/linkedin.svg')}')`}
+							aria-hidden="true"
+						></span>
 						<a
 							class="label-link"
 							href={profile.linkedinUrl}
@@ -235,7 +228,11 @@
 						</a>
 					</li>
 					<li>
-						<span class="contact-method">GitHub</span>
+						<span
+							class="contact-icon"
+							style={`--contact-icon: url('${asset('icons/github.svg')}')`}
+							aria-hidden="true"
+						></span>
 						<a
 							class="label-link"
 							href={profile.githubUrl}

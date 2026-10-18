@@ -177,63 +177,12 @@ h1 {
 	color: var(--muted);
 	max-width: 440px;
 }
-.hero-actions {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-	gap: 12px;
-	max-width: 360px;
-	margin-top: 32px;
-}
-.hero-actions .button {
-	padding: 16px 18px;
-}
-.button {
-	padding: 17px 23px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 13px;
-	font-weight: 600;
-	min-height: 52px;
-	border: 1px solid transparent;
-	border-radius: var(--radius-pill);
-}
-.button:hover {
-	text-decoration: none;
-	transform: translateY(-2px);
-}
-.button-primary {
-	background: var(--ink);
-	color: var(--surface);
-}
-.button-secondary {
-	background: var(--surface);
-	border-color: var(--line);
-}
-.button-secondary:hover {
-	border-color: var(--ink);
-}
 .text-link {
 	display: inline-flex;
 	align-items: center;
 	font-weight: 650;
 	font-size: 13px;
 	padding-block: 10px;
-}
-.hero-profile-links {
-	display: flex;
-	flex-wrap: wrap;
-	column-gap: 20px;
-	row-gap: 4px;
-	margin-top: 12px;
-	font-size: 13px;
-	color: var(--muted);
-}
-.hero-profile-links a {
-	display: inline-flex;
-	align-items: center;
-	min-height: 44px;
-	padding-block: 8px;
 }
 .hero-summary {
 	background: var(--ink);
@@ -631,7 +580,7 @@ h3 {
 }
 .contact-links li {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
 	justify-content: space-between;
 	gap: 24px;
 	border-bottom: 1px solid var(--on-dark-line);
@@ -640,13 +589,14 @@ h3 {
 	min-width: 0;
 	padding-block: 18px;
 }
-.contact-method {
+.contact-icon {
+	width: 14px;
+	height: 14px;
 	flex-shrink: 0;
 	color: var(--on-dark-muted);
-	font-size: 11px;
-	letter-spacing: 0.08em;
-	text-transform: uppercase;
-	line-height: 1.8;
+	background-color: currentColor;
+	-webkit-mask: var(--contact-icon) center / contain no-repeat;
+	mask: var(--contact-icon) center / contain no-repeat;
 }
 .contact-value {
 	font-size: 14px;
@@ -775,8 +725,5 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
-	}
-	.button:hover {
-		transform: none;
 	}
 }
