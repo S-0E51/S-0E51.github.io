@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Local documentation
+/AGENTS.md
+/docs/
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+/coverage/
+.cache/
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
