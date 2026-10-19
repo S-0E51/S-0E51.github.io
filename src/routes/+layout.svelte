@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" type="image/svg+xml" href={asset('favicon.svg')} />
+	<link rel="icon" type="image/svg+xml" href={`${asset('favicon.svg')}?v=pixel`} />
 </svelte:head>
 
 {@render children()}
