@@ -141,8 +141,14 @@ export const technologyGroups: TechnologyGroup[] = [
 	},
 	{
 		id: 'systems-tools',
-		title: 'Systems & development tools',
-		items: [{ name: 'Docker' }, { name: 'Linux' }, { name: 'PowerShell' }, { name: 'Git' }]
+		title: 'Systems & development',
+		items: [
+			{ name: 'C++' },
+			{ name: 'Docker' },
+			{ name: 'Linux' },
+			{ name: 'PowerShell' },
+			{ name: 'Git' }
+		]
 	}
 ];
 
@@ -204,7 +210,8 @@ export const projects: Project[] = [
 		coverTitle: 'OCR\nDemo',
 		description:
 			'A Windows desktop demo for capturing Japanese text from the screen, running OCR, and sending results to the clipboard or a companion reader. This earlier work helped shape Sakatsu Reader.',
-		period: 'July 2026',
+		// Owner-confirmed development dates; the public repository was uploaded later.
+		period: 'September 2025 - December 2025',
 		technologyGroups: [
 			{ title: 'App stack', items: ['Python', 'PyQt6'] },
 			{
