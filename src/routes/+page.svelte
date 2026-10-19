@@ -28,7 +28,10 @@
 		<a href="#projects">Projects</a>
 		<a href="#technologies">Technologies</a>
 		<a href="#resume">Resume</a>
-		<a href="#about">About &amp; Contact</a>
+		<a href="#about">About</a>
+		<a class="label-link" href="#contact">
+			<span class="link-label">Contact</span>
+		</a>
 	</nav>
 </header>
 
